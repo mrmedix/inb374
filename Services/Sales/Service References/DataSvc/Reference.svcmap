@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f95e06fb-b8f7-4769-9b4f-5d25a58927ae" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://fastapps04.qut.edu.au/n5499879/Services/Data/DataService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DataService.disco" MetadataType="Disco" ID="bccb17a4-90f5-42c6-b3a9-fabfd9ac73c2" SourceId="1" SourceUrl="http://fastapps04.qut.edu.au/n5499879/Services/Data/DataService.svc?disco" />
+    <MetadataFile FileName="DataService.xsd" MetadataType="Schema" ID="0b194559-be23-4f71-bd20-5e897d2e89e2" SourceId="1" SourceUrl="http://fastapps04.qut.edu.au/n5499879/Services/Data/DataService.svc?xsd=xsd0" />
+    <MetadataFile FileName="DataService.wsdl" MetadataType="Wsdl" ID="1a3d8c27-b52b-4fb1-9af5-ca4f08921e64" SourceId="1" SourceUrl="http://fastapps04.qut.edu.au/n5499879/Services/Data/DataService.svc?wsdl" />
+    <MetadataFile FileName="DataService1.xsd" MetadataType="Schema" ID="27bfaa02-da44-46df-ad47-b9004a028af5" SourceId="1" SourceUrl="http://fastapps04.qut.edu.au/n5499879/Services/Data/DataService.svc?xsd=xsd2" />
+    <MetadataFile FileName="DataService2.xsd" MetadataType="Schema" ID="a46f2271-ce41-4f85-a877-3d60ff0615b4" SourceId="1" SourceUrl="http://fastapps04.qut.edu.au/n5499879/Services/Data/DataService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

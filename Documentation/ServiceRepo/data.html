@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <!--On each page, include the name of the service, a
+    textual description of the purpose of the service, and of its functionality (briefly describe what each
+    operation does), and any constraints on usage (e.g. service protocols and description of
+    preconditions for each operation). Also, include a URL to the service itself and a URL to the
+    deployed WSDL for that service. -->
+</head>
+<body>
+    <p>
+        Bjorn Lyngwa n5499879
+    </p>
+    <ul>
+        <li><a href="sales.html">Sales</a></li>
+        <li><a href="data.html">Data</a></li>
+        <li><a href="supplier.html">Supplier</a></li>
+    </ul>
+    <p>
+        Service name: Data<br />
+        Accesses the database, provides classes modelling the relevant information stored for each service in the database tables.
+    </p>
+    <p>
+        URL: http://fastapps04.qut.edu.au/n5499879/Services/Data/DataService.svc <br />
+        WSDL: http://fastapps04.qut.edu.au/n5499879/Services/Data/DataService.svc?wsdl
+    </p>
+    <p>
+        <b>Customer[] GetCustomers()</b><br />
+        Returns an array of all customers stored in the database
+    </p>
+
+    <p>
+        <b>Customer GetCustomer(int customerID)</b><br />
+        Returns the customer with the provided Customer ID
+    </p>
+    <p>
+        <b>Quote[] GetQuotes()</b><br />
+        Returns an array of all quotes stored in the database
+    </p>
+    <p>
+        <b>Quote GetQuote(int quoteID)</b><br />
+        Returns the quote with the provided Quote ID
+    </p>
+    <p>
+        <b>int AddNewQuote(Quote quote)</b><br />
+        Stores the provided quote in the database and returns its automatically generated Quote ID
+    </p>
+    <p>
+        <b>void ModifyQuote(Quote quote)</b><br />
+        Updates the provided quote in the database. Note: The quote being passed into the method must have a Quote ID that matches one stored in the database.
+    </p>
+    <p>
+        <b>Item[] GetItems()</b><br />
+        Returns an array of all items stored in the database
+    </p>
+    <p>
+        <b>string HelloWorld()</b><br />
+        Greets the world :)
+    </p>
+
+
+
+
+</body>
+</html>

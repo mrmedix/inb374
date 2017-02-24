@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <p>
+        Bjorn Lyngwa n5499879
+    </p>
+    <ul>
+        <li><a href="sales.html">Sales</a></li>
+        <li><a href="data.html">Data</a></li>
+        <li><a href="supplier.html">Supplier</a></li>
+    </ul>
+    <p>
+        Service name: Sales<br />
+        Provides logic and limited process-centric services. Many of its method calls are simply routed directly through to the Data service (which is not accessed directly by any client software).<br />
+        But most logic for total service time required, appropriate status to apply to a quote, and which items and quantities to send in supplier purchase orders is done within the Sales service. 
+    </p>
+    <p>
+        URL: http://fastapps04.qut.edu.au/n5499879/Services/Sales/SalesService.svc <br />
+        WSDL: http://fastapps04.qut.edu.au/n5499879/Services/Sales/SalesService.svc?wsdl
+    </p>
+
+    <p>
+        <b>Customer[] GetCustomers()</b><br />
+        Returns an array of all customers stored in the database
+    </p>
+
+    <p>
+        <b>Customer GetCustomer(int customerID)</b><br />
+        Returns the customer with the provided Customer ID
+    </p>
+    <p>
+        <b>Quote[] GetQuotes()</b><br />
+        Returns an array of all quotes stored in the database
+    </p>
+    <p>
+        <b>Quote GetQuote(int quoteID)</b><br />
+        Returns the quote with the provided Quote ID
+    </p>
+    <p>
+        <b>int AddNewQuote(Quote quote)</b><br />
+        Stores the provided quote in the database and returns its automatically generated Quote ID
+    </p>
+    <p>
+        <b>void ModifyQuote(Quote quote)</b><br />
+        Updates the provided quote in the database. Note: The quote being passed into the method must have a Quote ID that matches one stored in the database.
+    </p>
+    <p>
+        <b>Item[] GetItems()</b><br />
+        Returns an array of all items stored in the database
+    </p>
+    <p>
+        <b>void ApproveQuote(int quoteID)</b><br />
+        Updates status of the chosen quote to Approved. Depending on its previous status it will be set to one of the following: ApprovedCheckStock, ETAPendingApproval, ApprovedETA.
+    </p>
+    <p>
+        <b>void RejectQuote(int quoteID)</b><br />
+        Updates status of the chosen quote to Rejected. If a quote needs to be re-opened you can manually set the appropriate status using the ModifyQuote method.
+    </p>
+    <p>
+        <b>void NotifyCustomer(int quoteID)</b><br />
+        THIS METHOD IS NOT IMPLEMENTED: Sends a notification to the customer with the booking details. 
+    </p>
+    <p>
+        <b>DateTime GetPartETA(string partSKU)</b><br />
+        Returns the Estimated Time of Arrival (date) for a part if an order is placed with the supplier on the current day.<br />
+        This method communicates with the Supplier webservice.
+    </p>
+    <p>
+        <b>Item[] CheckItemsStockLevel(Item[] items</b><br />
+        Checks current stock levels in the warehouse for each part provided.<br />
+        Also returns an array of items not in stock and the quantity required to order from supplier. This is handy for reporting back to the end user, but is not required to be stored by the client for placing orders with the supplier later on, this is done automatically by the Sales service if the ETA is approved by the customer.
+    </p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <p>
+        Bjorn Lyngwa n5499879
+    </p>
+    <ul>
+        <li><a href="sales.html">Sales</a></li>
+        <li><a href="data.html">Data</a></li>
+        <li><a href="supplier.html">Supplier</a></li>
+    </ul>
+    <p>
+        Service name: Supplier<br />
+        A basic service exposing a database with a list of parts available for order and the estimated lead time in days for delivery to the client.
+    </p>
+    <p>
+        URL: http://fastws.qut.edu.au:8080/n5499879SupplierSvc/webresources/entities.part/ <br />
+        WSDL: No WSDL is available, this service is using REST.
+    </p>
+    <p>
+        A GET HTTP command can be sent to the URL shown above, this will return an XML document containing all parts and corresponding lead times listed in the database.<br />
+        The URL can also be appended with the specific part description a lead time is required for to retrieve an XML document containing information only about the specified part.<br />
+    </p>
+    <p>
+        The Supplier service should also have support for placing purchase orders using the PUT command, but due to time constraints and not being able to deploy on the FASTWS server this functionality is at time of submission unsupported.
+    </p>
+</body>
+</html>

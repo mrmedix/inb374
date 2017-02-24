@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="WebClient.Master.cs" Inherits="WebClient.Client" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Servicing Our Autos</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="QuotesBar" style="float:left; width:200px;" >
+            <ul style="list-style-type: none;">
+                <asp:Literal ID="QuotesListLiteral" runat="server"></asp:Literal>
+            </ul>
+        </div>
+    <div>
+         <a href="Default.aspx">Home</a> <a href="NewQuote.aspx">New Quote</a>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+           
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

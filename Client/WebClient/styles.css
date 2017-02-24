@@ -1,0 +1,19 @@
+﻿body {
+    font-family: sans-serif;
+}
+
+ul {
+    padding-left:15px;
+    padding-right:20px;
+}
+ul li {
+    border:solid;
+    border-color:#28637d;
+    border-width:1px;
+    margin-top:5px;
+    
+}
+
+ul li:hover {
+    background-color:#a9d1f7;
+}
